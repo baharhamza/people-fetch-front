@@ -7,10 +7,11 @@ import { BASE_URL } from './index';
 function App() {
   const [count, setCount] = React.useState(0)
   const [people, setPeople] = React.useState([])
-  console.log(process.env.NODE_ENV)
-  console.log('I ran')
+ 
   async function getPeople(){
-   const res = await fetch(`${BASE_URL}/?count=${count}`)
+    console.log(process.env.NODE_ENV)
+    console.log('I ran')   
+    const res = await fetch(`${BASE_URL}/?count=${count}`)
    const resData = await res.json()
    setPeople(resData.data)
   }
