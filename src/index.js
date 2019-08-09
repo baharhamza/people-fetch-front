@@ -4,8 +4,8 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-// export const BASE_URL = process.env.Node_ENV !== 'production' ? 'http://localhost:4000' : `https://node-lambda.baharhamza2000.now.sh`;
-export const BASE_URL = `https://node-lambda.baharhamza2000.now.sh`
+export const BASE_URL = process.env.Node_ENV !== 'production' ? 'http://localhost:4000' : `https://node-lambda.baharhamza2000.now.sh`;
+
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
