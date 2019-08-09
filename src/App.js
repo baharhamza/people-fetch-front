@@ -8,6 +8,7 @@ function App() {
   const [count, setCount] = React.useState(0)
   const [people, setPeople] = React.useState([])
   console.log(process.env.NODE_ENV)
+  console.log('I ran')
   async function getPeople(){
    const res = await fetch(`${BASE_URL}/?count=${count}`)
    const resData = await res.json()
